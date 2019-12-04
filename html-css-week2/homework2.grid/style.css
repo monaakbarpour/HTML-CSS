@@ -1,0 +1,156 @@
+
+img{
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 2%;
+    
+}
+
+.grid-item:hover > img{
+    transform: rotate(360deg);
+    border-radius: 1%;
+    transition-duration: .9s;
+}
+
+.grid-item:active > img{
+    transform: scale(1.3,1.3);
+}
+
+#grid-flex{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: auto auto auto auto;
+    flex-flow: wrap;
+    /* overflow:auto;    */
+}
+
+.grid-item{
+    display: block;
+    width: 300px;
+    margin: 50px;
+    border-radius: 5%;
+    height: 200px;
+    background-color:rgb(0, 0, 0);
+    transition-property: width;
+    transition-duration: .9s;
+    
+}
+
+
+.grid-item:hover{
+    height: 450px;
+    transition-duration: .9s;
+    transition-delay: .9s;
+    transition-timing-function: linear;
+    transition: 1s ease;
+}
+
+.grid-item p{
+    visibility: hidden;
+    font-family: cursive;
+    font-size: 14px;
+    color:#ffffff;
+}
+
+.grid-item:hover p{
+    visibility: visible;
+    transition-duration: .9s;
+    transition-delay: .9s;
+}
+
+.grid-item h3{
+    visibility: hidden;
+    font-family: cursive;
+    color:#ffffff;
+}
+
+.grid-item:hover h3{
+    visibility: visible;
+    transition-duration: .9s;
+    transition-delay: .9s;
+}
+
+
+#grid-flex .grid-item:first-child{
+    grid-column:1/4 ;
+}
+
+#grid-flex .grid-item:nth-child(2){
+    grid-column:4/8 ;
+}
+
+#grid-flex .grid-item:nth-child(3){
+    grid-column:8/12 ;
+}
+
+#grid-flex .grid-item:nth-child(4){
+    grid-column:1/4 ;
+}
+
+#grid-flex .grid-item:nth-child(5){
+    grid-column:4/8 ;
+}
+
+#grid-flex .grid-item:nth-child(6){
+    grid-column: 8/12;
+}
+
+#grid-flex .grid-item:nth-child(7){
+    grid-column: 1/4;
+}
+
+#grid-flex .grid-item:nth-child(8){
+    grid-column: 4/8;
+}
+
+#grid-flex .grid-item:nth-child(9){
+    grid-column:8/12;
+}
+
+#grid-flex .grid-item:nth-child(10){
+    grid-column:1/4 ;
+}
+
+#grid-flex .grid-item:nth-child(11){
+    grid-column:4/8 ;
+}
+
+#grid-flex .grid-item:nth-child(12){
+    grid-column:8/12 ;
+}
+
+#grid-flex .grid-item:nth-child(13){
+    grid-column:2/6 ;
+}
+
+#grid-flex .grid-item:nth-child(14){
+    grid-column:8/12 ;
+}
+
+h1{
+    background-color: #f8005f;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 20%;
+    height: 60px;
+    padding-top: 40px;
+    text-transform: uppercase;
+}
+
+h2{
+    background-color: #f8005f;
+    width: 400px;
+    text-align: center;
+    margin:  auto;
+    margin-top: 3px;
+    border-radius: 20%;
+    height: 60px;
+    padding-top: 40px;
+    text-transform: uppercase;   
+}
+
+body{
+    background-color:rgb(238, 255, 0);
+}
+
