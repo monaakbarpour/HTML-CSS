@@ -1,0 +1,83 @@
+body{
+    background-color:black;
+    color:white;
+    font-family: cursive
+}
+
+#grid-container{
+    display:grid;
+    grid-gap: 5px;
+    /* grid-auto-rows:minmax(60px,auto)  */
+}
+
+nav{
+    display: flex;
+    background-image: url(https://img.freepik.com/free-psd/abstract-background-design_1297-87.jpg?size=626&ext=jpg);
+    grid-column: 1/12;
+    grid-row: 1/5;
+    justify-content: space-around;
+    /* border: solid black 5px; */
+    text-align: center;
+    background-repeat: inherit;
+    background-size: cover;
+    
+}
+
+aside{
+    background-image: url(https://img.freepik.com/free-psd/abstract-background-design_1297-87.jpg?size=626&ext=jpg);
+    grid-column: 1/4;
+    grid-row:5/12;
+    background-repeat: inherit;
+    width:200px;
+    background-size: unset
+}
+
+main{
+    background-image:url(https://img.freepik.com/free-psd/abstract-background-design_1297-87.jpg?size=626&ext=jpg);
+    grid-column:4/12;
+    grid-row:5/12; 
+    color: rgb(216, 216, 247);
+    background-repeat: inherit;
+    /* background-attachment: fixed; */
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    width:1000px;
+    background-size: cover;
+}
+
+footer{
+    display: flex;
+    grid-column:1/12;
+    grid-row:12/16;
+    background-image: url(https://img.freepik.com/free-psd/abstract-background-design_1297-87.jpg?size=626&ext=jpg);
+    background-attachment: fixed;
+    justify-content: space-around;
+    background-repeat: inherit;
+    background-size: cover;
+}
+
+#objective{
+    margin-top:20px;
+}
+
+
+#myprofile{
+    text-align:left;
+    font-size: 22px;
+    margin-top:30px;
+}
+
+#image{
+    border-radius: 50%;
+}
+
+
+
+nav div header{
+    text-align: center;
+}
+
+table , th,td{
+   border:solid 2px;
+}
